@@ -1,4 +1,4 @@
-##Turing Machine Emulator
+## Turing Machine Emulator
 This console script can emulate any single tape turing machine given in JSON format (details below).
 
 ##Usage
@@ -7,7 +7,7 @@ To emulate machine given in JSON format
 py TuringEmulator.py turing_machine_in_json_form.json
 ```
 Installation of some packages via pip may be required
-##Turing Machine JSON
+## Turing Machine JSON
 Example machine that clears tape that has a sequence of 0s and 1s
 ```json
 {
