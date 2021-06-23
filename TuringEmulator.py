@@ -78,6 +78,10 @@ def main():
     except IndexError:
         print('Path to turing machine in json form required!')
         print(f'try: py {__file__} turing_machine_path.json')
+    except FileNotFoundError as not_found:
+        print(f'Could not find file {not_found.filename}')
+    except PermissionError as perm_error:
+        print(f'Could not open file {perm_error.filename}')
 
 
 if __name__ == '__main__':
